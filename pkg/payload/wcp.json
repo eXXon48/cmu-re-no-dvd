@@ -1,0 +1,18 @@
+{
+ "ops": [
+  {
+   "set": {
+    "xpath": "//service[@name='jcidvd']/@autorun",
+    "value": "no",
+    "reason": "no DVD hardware on this unit; nothing depends on jcidvd and its clients only call it async"
+   }
+  },
+  {
+   "set": {
+    "xpath": "//service[@name='jcidvd']/@reset_board",
+    "value": "no",
+    "reason": "jcidvd is off; it must never reset the board"
+   }
+  }
+ ]
+}
